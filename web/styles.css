@@ -1,0 +1,132 @@
+/* Base Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+hr {
+	margin: 12px 0px;
+}
+
+/* Animations */
+@keyframes showright {
+	0% {
+		opacity: 0;
+		transform: translateY(500%);
+	}
+	40%, 80%, 100% {
+		transform: translateY(10%);
+	}
+	80%, 100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hideright {
+	80%, 100% {
+		transform: translateX(500%);
+		opacity: 0;
+	}
+}
+
+/* Animation Classes */
+.showright, .hideright {
+	animation: 1s ease forwards;
+}
+
+.showright {
+	animation-name: showright;
+}
+
+.hideright {
+	animation-name: hideright;
+}
+
+/* Layout */
+#ui {
+	position: absolute;
+	bottom: 10%;
+}
+
+#wrapper {
+	height: auto;
+	margin: 0 0 8px 0;
+	min-width: 150px;
+	min-height: 275px;
+	border-radius: 10px;
+}
+
+#main {
+	margin: 12px 50px 12px 12px;
+	position: relative;
+	display: none;
+}
+
+#title {
+	font-size: 28px;
+	font-weight: 600;
+
+}
+
+#message {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#help {
+	color: gray;
+	font-size: 12px;
+	margin-top: 100px;
+	position: fixed;
+	bottom: 1rem;
+}
+
+/* Color Classes */
+.blue, .green, .red, .grey {
+	background-color: rgba(20, 20, 20, 0.85);
+	color: white;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.blue-border {
+	border: 4px solid #164bc5;
+}
+
+.green-border {
+	border: 4px solid #20ab4d;
+}
+
+.red-border {
+	border: 4px solid #dc3545;
+}
+
+.grey-border {
+	border: 4px solid #646464;
+}
+
+ul {
+	margin-left: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+	border-bottom: #ddd 2px solid;
+}
+
