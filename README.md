@@ -1,9 +1,8 @@
 # mtxTextUI [FREE][STANDALONE]
 
-Hello! I created this script a few years ago and have decided to publish it since it no longer serves a purpose for me. While the code isn’t my best work, I’ve made it available for free.
+Hello! I created this **FiveM script** a few years ago and have decided to publish it since it no longer serves a purpose for me. While the code isn’t my best work, I’ve made it available for free.
 
 ## Features
-
 * Lightweight
 * 0.00ms idle time (0.01ms during activity)
 * Close with a key
@@ -12,14 +11,26 @@ Hello! I created this script a few years ago and have decided to publish it sinc
 * Simple to use with pre-made colors, exports, and trigger events
 * Supports HTML with pre-written styles
 * Includes features for tables, lists, progress, etc.
+* Discord logs via webhooks
 
 ## Preview
-![uishowcase|690x388, 100%](https://forum-cfx-re.akamaized.net/original/5X/e/8/e/1/e8e1a30b593223eb8f6ed383de3924914003c0f8.jpeg)
-![uiprogress|419x300, 100%](https://forum-cfx-re.akamaized.net/original/5X/6/3/1/3/6313978d9328a6fac524d9631c828f84a88c83ad.png)
-![uiresmonactive|401x433](https://forum-cfx-re.akamaized.net/original/5X/3/7/7/b/377b3f094bff5645ab2e8ff3e3898f5a9b451439.png)
-![uiresmonidle|391x169](https://forum-cfx-re.akamaized.net/original/5X/1/6/4/a/164af43b9fd86d22411572345cc155ed026675f6.png)
-![uilist|288x318](https://forum-cfx-re.akamaized.net/original/5X/e/e/6/2/ee62bdda246b73ebc92ee85123eb054ef7ef0d55.png)
-![uitable|505x311](https://forum-cfx-re.akamaized.net/original/5X/e/3/6/4/e364b4bc0e04f72c0277ca1d0e679efdd6feeb61.png)
+![UI Showcase](https://forum-cfx-re.akamaized.net/original/5X/e/8/e/1/e8e1a30b593223eb8f6ed383de3924914003c0f8.jpeg)
+![Progress](https://forum-cfx-re.akamaized.net/original/5X/6/3/1/3/6313978d9328a6fac524d9631c828f84a88c83ad.png)
+![resmon active](https://forum-cfx-re.akamaized.net/original/5X/3/7/7/b/377b3f094bff5645ab2e8ff3e3898f5a9b451439.png)
+![resmon idle](https://forum-cfx-re.akamaized.net/original/5X/1/6/4/a/164af43b9fd86d22411572345cc155ed026675f6.png)
+![List](https://forum-cfx-re.akamaized.net/original/5X/e/e/6/2/ee62bdda246b73ebc92ee85123eb054ef7ef0d55.png)
+![Table](https://forum-cfx-re.akamaized.net/original/5X/e/3/6/4/e364b4bc0e04f72c0277ca1d0e679efdd6feeb61.png)
+
+## How to install
+* Put the script into your `resources` folder (or make a new folder `[mtx]` in your resources).
+* Ensure the script is in `server.cfg`.
+```
+ensure mtxTextUI
+```
+or
+```
+ensure [mtx]
+```
 
 ## Usage
 * Usage with exports
@@ -53,6 +64,25 @@ TriggerEvent("mtxTextUI:Close", "ID")
 * Green
 * Red
 
+## Using the HTML
+There are showcases in client.lua to demonstrate the HTML usage.
+
+### Preview showcases with command
+There are multiple commands to test the UI; just enable debug in the config.
+```lua
+Config = {
+    CloseKey = 194,
+    Debug = true
+}
+```
+Sure, here are the commands:
+
+* /uitext
+* /uilist
+* /uitable
+* /uiprogress
+
+You can use these commands in the chat to test the UI.
 ## Code Customization
 
 Feel free to modify the code to suit your needs. If you decide to publish an edited version, please credit me in the `fxmanifest` and your post or repository.
