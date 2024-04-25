@@ -44,10 +44,10 @@ exports.mtxTextUI.Close()
 * Server-side usage
 ```lua
 -- Opening the UI
-TriggerClientEvent("mtxTextUI:Open", "ID", "Title", "Message<br>With HTML Support", "color")
+TriggerClientEvent("mtxTextUI:Open", ID, "Title", "Message<br>With HTML Support", "color")
 
 -- Closing the UI
-TriggerClientEvent("mtxTextUI:Close", "ID")
+TriggerClientEvent("mtxTextUI:Close", ID)
 ```
 * Client-side usage
 ```lua
